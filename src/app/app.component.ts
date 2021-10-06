@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'news-web';
+  act  = true;
+  showDefaultMessage = true; // default state
+
+toggleDefaultMessage(state: boolean) {
+   this.showDefaultMessage = state;
+}
 }
